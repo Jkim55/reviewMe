@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ReviewMe</title>
+    <title>Review It!</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,9 +9,12 @@
   </head>
 
   <body>
-    <% flash.each do |name, msg| %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
-    <% end %>
-    <%= yield %>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
