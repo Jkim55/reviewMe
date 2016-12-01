@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* TO DO:
+- hit an external api for movie info
+- delete movie
+- edit/delete comments
+- require rating
