@@ -11,9 +11,11 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+# Gems added for project
 gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass'
+gem 'searchkick'
 
 
 group :development, :test do
